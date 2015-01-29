@@ -1,0 +1,1 @@
+/usr/sbin/lpadmin -d Printer-01 #set printer as default
