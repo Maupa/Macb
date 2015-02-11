@@ -1,1 +1,0 @@
-sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.UserNotificationCenter.plist
