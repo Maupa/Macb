@@ -4,7 +4,7 @@
 
 [Printers](https://github.com/Maupa/Macb/blob/master/scripts/Printers.md)
 
-[Systemsetup](https://github.com/Maupa/Macb/blob/master/scripts/Systemsetup.md)
+[System Setup](https://github.com/Maupa/Macb/blob/master/scripts/Systemsetup.md)
 
 [Tweaks](https://github.com/Maupa/Macb/blob/master/scripts/Tweaks.md)
 
