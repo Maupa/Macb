@@ -22,3 +22,11 @@ networksetup -setautoproxyurl Wi-Fi http://proxy.example.com/proxy.pac
 ```bash
 history -c
 ```
+
+## Stop kids from playing with volume
+
+```bash
+defaults write -g "com.apple.sound.beep.feedback" -int 0
+defaults write "com.apple.systemsound" "com.apple.sound.uiaudio.enabled" -int 0
+killall -HUP SystemUIServer
+```
