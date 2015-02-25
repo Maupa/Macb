@@ -29,7 +29,7 @@ done
 ## Set default paper size to A4
 
 ```bash
-defaults write org.cups.PrintingPrefs DefaultPaperID iso-a4
+defaults write org.cups.PrintingPrefs DefaultPaperID -string iso-a4
 ```
 Other options:
  - US Letter - `na-letter`
