@@ -19,7 +19,7 @@ echo "Adding computer to Active Directory"
 echo "y" | dsconfigad -add $DOMAIN -username $ADUSERNAME -password $ADPASS
 ```
 
-## Unbind AD
+## Unbind from AD
 
 ```bash
 ADUSERNAME="admin"
@@ -37,4 +37,12 @@ echo "y" | dsconfigldap -v -a $DOMAIN -n o$DOMAIN
 dscl /Search -create / SearchPolicy CSPSearchPath
 sleep 10
 dscl /Search -append / CSPSearchPath /LDAPv3/$DOMAIN
+```
+
+## Unbind from ODS
+
+```bash
+DOMAIN="ods.example.com"
+
+/usr/sbin/dsconfigldap -f -v -r $DOMAIN
 ```
