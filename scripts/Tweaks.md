@@ -14,6 +14,11 @@ history -c
 
 ```bash
 defaults write -g "com.apple.sound.beep.feedback" -int 0
-defaults write "com.apple.systemsound" "com.apple.sound.uiaudio.enabled" -int 0
 killall -HUP SystemUIServer
+```
+
+## Enable remote VNC access
+
+```bash
+sudo  /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -activate -configure -access -on -clientopts -setvnclegacy -vnclegacy yes -clientopts -setvncpw -vncpw mypasswd -restart -agent -privs -all
 ```
